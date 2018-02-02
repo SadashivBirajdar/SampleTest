@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_3sdp"
+    android:layout_marginRight="@dimen/_3sdp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" />
+
+
+    <Button
+        android:id="@+id/user_login_button"
+        style="@style/loginPage_buttons"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/username_password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_fragment_login_button_text" />
+
+    <RelativeLayout
+        android:id="@+id/rl_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_login_button"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/forgot_password_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/login_fragment_forgot_password_textVIew_label"
+            android:textColor="@color/secondary_color_black" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/login_banner_image"
+        android:layout_width="@dimen/_310sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_above="@+id/user_register_button"
+        android:layout_below="@+id/rl_forgot_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/user_register_button"
+        style="@style/loginPage_buttons"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_fragment_register_button_text" />
+
+    <LinearLayout
+        android:id="@+id/username_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.example.sampletest.utils.CustomEditText
+            android:id="@+id/user_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:imeOptions="actionNext"
+            app:length="10"
+            app:type="mobile" />
+
+        <com.example.sampletest.utils.CustomEditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintText="@string/password"
+            app:imeOptions="actionGo"
+            app:length="30"
+            app:type="password" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomEditTextStyle">
+
+        <attr name="type" format="enum">
+            <enum name="password" value="0" />
+            <enum name="mobile" value="1" />
+            <enum name="normal" value="2" />
+            <enum name="email" value="3" />
+            <enum name="number" value="4" />
+            <enum name="text" value="5" />
+        </attr>
+        <attr name="hintText" format="string" localization="suggested" />
+        <attr name="errorText" format="string" localization="suggested" />
+
+        <attr name="textInputType" format="integer" />
+
+        <attr name="length" format="integer" />
+        <attr name="errorTextColor" format="integer" />
+        <attr name="imeOptions" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="actionNext" value="1" />
+            <enum name="actionGo" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="errorEditText">
+        <attr name="hintTextE" format="string" localization="suggested" />
+        <attr name="valueColorE" format="color" />
+        <attr name="imeOptionsE" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="actionNext" value="1" />
+            <enum name="actionGo" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

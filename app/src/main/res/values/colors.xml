@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--PRIMARY COLORS-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--SECONDARY COLORS-->
+    <color name="secondary_color_black">#000000</color>
+    <color name="secondary_color_10_percent_black">#E6E6E6</color>
+    <color name="secondary_color_5_percent_black">#F6F6F6</color>
+    <color name="secondary_color_30_percent_black">#B3B3B3</color>
+    <color name="secondary_color_35_percent_yellow">#D2FADD</color>
+    <color name="secondary_color_white">#ffffff</color>
+
+    <color name="gray">#e6e6e6</color>
+    <color name="home_image_place_holder">#E6E6E6</color>
+    <color name="color_black_strike">#616161</color>
+    <color name="color_red">#c62828</color>
+
+</resources>

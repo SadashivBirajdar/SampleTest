@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_frame_one"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_two"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_three"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_four"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_five"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_six"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_seven"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_eight"
+        android:duration="120" />
+
+    <item
+        android:drawable="@drawable/ic_frame_nine"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_ten"
+        android:duration="120" />
+
+    <item
+        android:drawable="@drawable/ic_frame_eleven"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_twelve"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_thirteen"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_fourteen"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_fifteen"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_sixteen"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_seventeen"
+        android:duration="120" />
+    <item
+        android:drawable="@drawable/ic_frame_eighteen"
+        android:duration="120" />
+</animation-list>

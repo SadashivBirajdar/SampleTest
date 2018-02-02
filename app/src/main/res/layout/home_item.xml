@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rowLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/_100sdp">
+
+        <TextView
+            android:id="@+id/single_row_text"
+            style="@style/customTextViewStyleHelveticaMedium"
+            android:text="Item List"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_toLeftOf="@+id/single_row_arrow"
+            android:textColor="@drawable/nav_menu_item_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

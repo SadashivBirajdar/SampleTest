@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_3sdp"
+    android:layout_marginRight="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:id="@+id/plp_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtTotalItems"
+            style="@style/Helvetica45_12pts_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_toLeftOf="@+id/imgSortLayout"
+            android:background="@drawable/plp_header_total_items_background"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/secondary_color_black" />
+
+        <LinearLayout
+            android:id="@+id/imgSortLayout"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/plp_filter_header_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgSort"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:srcCompat="@drawable/ic_filter" />
+
+            <TextView
+                android:id="@+id/imgSort_text"
+                style="@style/Helvetica45_8pts_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/noProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_continue_shopping"
+            style="@style/browse_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@+id/noProducts"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:text="@string/continue_shopping"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plp_header"
+        android:isScrollContainer="false"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/new_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/plp_header"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

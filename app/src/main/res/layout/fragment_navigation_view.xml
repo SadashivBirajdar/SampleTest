@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layProfile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/personal_info_profile_pic"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_profile_placeholder" />
+
+
+        <RelativeLayout
+            android:id="@+id/header_login_register_button_or_username_containing_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/personal_info_profile_pic">
+
+            <Button
+                android:id="@+id/header_login_register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:background="@drawable/black_outline"
+                android:ellipsize="marquee"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:singleLine="true"
+                android:text="Login / Register"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/header_logged_in_user_name"
+                style="@style/Helvetica65_15pts_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/secondary_color_black"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/navigation_fragment_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/navigation_menu_fragment_root_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--TO TAKE TO HOMEPAGE-->
+
+            <LinearLayout
+                android:id="@+id/home_directing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_label_textView"
+                    style="@style/customTextViewStyleHelveticaMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_menu_item"
+                    android:gravity="center_vertical"
+                    android:text="@string/nav_menu_home_label"
+                    android:textColor="@drawable/nav_menu_item_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/secondary_color_30_percent_black" />
+
+            </LinearLayout>
+
+            <!--TO TAKE TO My Shopping List-->
+            <LinearLayout
+                android:id="@+id/my_shopping_list_directing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/my_shopping_list_label_textView"
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:background="@drawable/nav_menu_item"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="@string/my_shopping_list"
+                    android:textColor="@drawable/nav_menu_item_text" />
+
+                <View style="@style/lineStyle" />
+
+            </LinearLayout>
+
+            <!--TO OPEN MY ACCOUNT DETAILS-->
+            <LinearLayout
+                android:id="@+id/my_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/my_accounts_label_textView"
+                        style="@style/customTextViewStyleHelveticaLight"
+                        android:background="@drawable/nav_menu_item"
+                        android:text="@string/nav_menu_my_account_label"
+                        android:textColor="@drawable/nav_menu_item_text" />
+
+                    <ImageView
+                        android:id="@+id/my_accounts_arrow_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/_10sdp"
+                        app:srcCompat="@drawable/ic_nxt_arrow" />
+
+
+                </RelativeLayout>
+
+
+                <View style="@style/lineStyle" />
+
+
+            </LinearLayout>
+
+            <!--MY ACCOUNT DETAILS-->
+            <LinearLayout
+                android:id="@+id/my_account_layout_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--PERSONAL iNFO-->
+                <TextView
+                    android:id="@+id/my_accounts_personal_info_textView"
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:background="@drawable/nav_menu_item"
+                    android:text="@string/personal_info"
+                    android:textColor="@drawable/nav_menu_item_text" />
+
+                <View style="@style/lineStyle" />
+
+
+                <!--ADDRESS BOOK-->
+                <TextView
+                    android:id="@+id/my_accounts_address_book_textView"
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:background="@drawable/nav_menu_item"
+                    android:text="@string/address_book" />
+
+                <View style="@style/lineStyle" />
+
+
+                <!--PAST ORDERS-->
+                <TextView
+                    android:id="@+id/my_accounts_past_orders_textView"
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:background="@drawable/nav_menu_item"
+                    android:text="@string/past_orders" />
+
+                <View style="@style/lineStyle" />
+
+
+                <!--CHANGE PASSWORD -->
+                <TextView
+                    android:id="@+id/my_accounts_change_password_textView"
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:background="@drawable/nav_menu_item"
+                    android:text="@string/change_password" />
+
+                <View style="@style/lineStyle" />
+            </LinearLayout>
+
+
+            <!--FOR SHOP BY CATEGORY-->
+            <LinearLayout
+                android:id="@+id/shop_by_category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/shop_by_category_label_textView"
+                        style="@style/customTextViewStyleHelveticaLight"
+                        android:background="@drawable/nav_menu_item"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/shop_by_category"
+                        android:textColor="@drawable/nav_menu_item_text" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/_10sdp"
+                        app:srcCompat="@drawable/ic_nxt_arrow" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/lineStyle" />
+
+            </LinearLayout>
+
+
+            <!--TO TAKE TO SHOP BY OFFERS-->
+            <LinearLayout
+                android:id="@+id/shop_by_offers_directing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offers_label_textView"
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:background="@drawable/nav_menu_item"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Shop By Offers"
+                    android:textColor="@drawable/nav_menu_item_text" />
+
+                <View style="@style/lineStyle" />
+
+            </LinearLayout>
+
+            <!--TO OPEN CUSTOMER CARE DETAILS-->
+            <LinearLayout
+                android:id="@+id/my_customer_care_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/customer_care_label_textView"
+                        style="@style/customTextViewStyleHelveticaLight"
+                        android:background="@drawable/nav_menu_item"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="Customer Care"
+                        android:textColor="@drawable/nav_menu_item_text"
+                        app:srcCompat="@drawable/vector_drawable_downarrow" />
+
+                    <ImageView
+                        android:id="@+id/customer_care_arrow_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_nxt_arrow" />
+
+                </RelativeLayout>
+
+                <View style="@style/lineStyle" />
+
+                <LinearLayout
+                    android:id="@+id/my_customer_care_layout_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--TO LOGOUT-->
+            <LinearLayout
+                android:id="@+id/log_out_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nav_menu_item"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/customTextViewStyleHelveticaLight"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Log Out"
+                    android:textColor="@color/colorPrimary" />
+
+                <View style="@style/lineStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

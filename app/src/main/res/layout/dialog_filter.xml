@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/secondary_color_10_percent_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_sort_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_filter" />
+
+            <TextView
+                android:id="@+id/txtSortLabel"
+                style="@style/Helvetica45_15pts_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_sort_icon"
+                android:text="Sort By" />
+
+            <ImageView
+                android:id="@+id/iv_sort_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                app:srcCompat="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separation_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/secondary_color_black"
+        android:layerType="software" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sort_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

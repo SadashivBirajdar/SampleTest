@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/_24sdp"
+    android:height="@dimen/_24sdp"
+    android:viewportHeight="200"
+    android:viewportWidth="200">
+    <group android:name="plus">
+        <path
+            android:name="st0"
+            android:fillColor="@color/secondary_color_white"
+            android:pathData="M100,0C73.3,0,48.2,10.4,29.3,29.3C10.4,48.2,0,73.3,0,100c0,26.7,10.4,51.8,29.3,70.7
+		c18.9,18.9,44,29.3,70.7,29.3c26.7,0,51.8-10.4,70.7-29.3c18.9-18.9,29.3-44,29.3-70.7c0-26.7-10.4-51.8-29.3-70.7
+		C151.8,10.4,126.7,0,100,0 M161.9,161.9c-16.5,16.5-38.5,25.6-61.9,25.6c-23.4,0-45.3-9.1-61.9-25.6
+		c-16.5-16.5-25.6-38.5-25.6-61.9s9.1-45.3,25.6-61.9C54.7,21.6,76.6,12.5,100,12.5c23.4,0,45.3,9.1,61.9,25.6
+		c16.5,16.5,25.6,38.5,25.6,61.9S178.4,145.3,161.9,161.9z" />
+        <path
+            android:name="st0"
+            android:fillColor="@color/secondary_color_white"
+            android:pathData="M144.2,135.4L108.8,100l35.4-35.4c2.4-2.4,2.4-6.4,0-8.8c-2.4-2.4-6.4-2.4-8.8,0L100,91.2L64.6,55.8
+		c-2.4-2.4-6.4-2.4-8.8,0c-2.4,2.4-2.4,6.4,0,8.8L91.2,100l-35.4,35.4c-2.4,2.4-2.4,6.4,0,8.8c2.4,2.4,6.4,2.4,8.8,0l35.4-35.4
+		l35.4,35.4c2.4,2.4,6.4,2.4,8.8,0C146.6,141.8,146.6,137.8,144.2,135.4" />
+    </group>
+    <group android:name="Layer_1_1_" />
+</vector>

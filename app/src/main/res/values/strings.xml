@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SampleTest</string>
+
+    // login
+    <string name="login_activity_title">Login</string>
+    <string name="login_fragment_register_button_text">Register</string>
+    <string name="login_fragment_forgot_password_textVIew_label">Forgot Password</string>
+    <string name="login_fragment_login_button_text">Login</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile No</string>
+    <string name="network_error_reason">No internet connection currently available. Please try again later.</string>
+    <string name="validate_no_password_entered">Please enter password.</string>
+    <string name="invalid_number">Please enter a valid mobile number.</string>
+
+    // navigation
+    <string name="my_shopping_list">My Shopping List</string>
+    <string name="nav_menu_home_label">Home</string>
+    <string name="nav_menu_my_account_label">My Account</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="address_book">Address Book</string>
+    <string name="past_orders">Past Orders</string>
+    <string name="change_password">Change Password</string>
+    <string name="shop_by_category">Shop By Category</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="continue_shopping">Continue Browsing</string>
+    <string name="no_internet_error">It seems your internet connection is either turned off or not
+        working. Please ensure internet connectivity and load again.
+    </string>
+    <string name="sort">Sort</string>
+
+    // customer care menu
+    <string name="contact_us">Contact Us</string>
+    <string name="faq_s">FAQ\'s</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="customer_care_title">Customer Care</string>
+</resources>

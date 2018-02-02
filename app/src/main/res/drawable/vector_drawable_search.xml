@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="200"
+    android:viewportWidth="193">
+    <group android:name="search">
+        <path
+            android:fillColor="#FF000000"
+            android:fillType="evenOdd"
+            android:pathData="M13.481,71.268c0-31.867,25.928-57.788,57.793-57.788
+		c31.861,0,57.782,25.921,57.782,57.788c0,31.865-25.924,57.799-57.782,57.799C39.409,129.067,13.481,103.133,13.481,71.268
+		 M0,71.268c0,39.307,31.974,71.279,71.274,71.279c14.703,0,28.376-4.479,39.737-12.134c0.05,0.054,0.095,0.107,0.148,0.146
+		l67.098,66.815c1.75,1.746,4.048,2.625,6.342,2.625c2.305,0,4.611-0.894,6.368-2.653c3.504-3.521,3.49-9.214-0.026-12.707
+		l-66.383-66.107c11.176-12.586,17.983-29.146,17.983-47.266C142.542,31.974,110.57,0,71.274,0C31.974,0,0,31.974,0,71.268z" />
+    </group>
+    <group android:name="Layer_1" />
+</vector>

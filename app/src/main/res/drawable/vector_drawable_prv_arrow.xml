@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="14dp"
+    android:height="24dp"
+    android:viewportHeight="200"
+    android:viewportWidth="109">
+    <group android:name="prv-arrow">
+        <path
+            android:fillColor="#FF000000"
+            android:fillType="evenOdd"
+            android:pathData="M106.459,15.292L21.62,100.121l84.598,84.597
+		c3.484,3.496,3.484,9.162,0,12.669c-3.508,3.484-9.174,3.484-12.669,0l-90.92-90.924c-3.504-3.504-3.504-9.173,0-12.669
+		L93.79,2.635C95.532,0.87,97.833,0,100.124,0c2.29,0,4.581,0.87,6.335,2.635C109.955,6.121,109.955,11.796,106.459,15.292" />
+    </group>
+    <group android:name="Layer_1" />
+</vector>
