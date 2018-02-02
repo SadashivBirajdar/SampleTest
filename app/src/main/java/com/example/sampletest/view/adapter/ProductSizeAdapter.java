@@ -64,7 +64,13 @@ public class ProductSizeAdapter extends RecyclerView.Adapter<ProductSizeAdapter.
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(v.getContext(), "Clicked", Toast.LENGTH_SHORT).show();
+                    DataModel.CategoriesBean.ProductsBean.VariantsBean sizeEntity = variants.get(getAdapterPosition());
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.setLength(0);
+                    stringBuilder.trimToSize();
+                    stringBuilder.append(sizeEntity.getColor()).
+                            append(" (").append(sizeEntity.getSize()).append(")");
+                    Toast.makeText(v.getContext(), stringBuilder.toString() + " Clicked", Toast.LENGTH_SHORT).show();
                 }
             });
         }
